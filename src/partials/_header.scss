@@ -1,0 +1,40 @@
+nav{
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid $secondary_color;
+
+    .logo{
+        width: 12%;
+    }
+
+    ul{
+        text-align: right;
+        list-style: none;
+
+        li{
+            display: inline-block;
+            margin: 5px 10px;
+            a{
+                text-decoration: none;
+                color:$secondary_color;
+                font-size: $little_font_size;
+            }
+            button{
+                display: flex;
+                align-items: center;
+                border: 1px solid $colo_for_button;
+                color:$colo_for_button;
+                padding: 5px;
+                font-weight: bold;
+                border-radius: 5px;
+
+                .logo-header{
+                    width: 20px;
+                }
+            }
+            
+        }
+    }
+}
