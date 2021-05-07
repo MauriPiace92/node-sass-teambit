@@ -12,3 +12,65 @@
     display: table;
     clear: both;
 }
+
+@mixin section_part_floating_left{
+    .image-description{
+        width: 35%;
+        float: left;
+    }
+  
+    .described{
+        width: 19%;
+        float: left;
+
+        h5{
+            font-size: 25px;
+            font-weight: bold;
+            color: $secondary_color;
+
+        }
+
+        p{
+            margin: 40px 0;
+            color: #7F14D4;
+            font-weight: bold;
+            font-size: 19px;
+        }
+        a{
+            text-decoration: none;
+            color: $colo_for_button;
+        }
+
+    }
+}
+
+@mixin section_part_floating_right{
+    .image-description{
+        width: 35%;
+        float: right;
+    }
+  
+    .described{
+        width: 19%;
+        float: right;
+
+        h5{
+            font-size: 25px;
+            font-weight: bold;
+            color: $secondary_color;
+
+        }
+
+        p{
+            margin: 40px 0;
+            color: #7F14D4;
+            font-weight: bold;
+            font-size: 19px;
+        }
+        a{
+            text-decoration: none;
+            color: $colo_for_button;
+        }
+
+    }
+}

@@ -50,8 +50,8 @@ nav{
 
 // header jumbotron:
 .jumbotron{
-    margin-top: 50px;
-    padding: 30px 0;
+    margin-top: 20px;
+    padding: 40px 0;
 
     &::after{
         @include clearfix;
