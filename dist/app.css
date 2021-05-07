@@ -25,7 +25,7 @@ nav {
   border-bottom: 1px solid #584245;
 }
 nav .logo {
-  width: 12%;
+  width: 9%;
 }
 nav ul {
   text-align: right;
@@ -39,16 +39,88 @@ nav ul li a {
   text-decoration: none;
   color: #584245;
   font-size: 16px;
+  font-weight: bold;
+}
+nav ul li a:hover {
+  color: #ffe7d2;
 }
 nav ul li button {
   display: flex;
   align-items: center;
-  border: 1px solid #2e4790;
-  color: #2e4790;
-  padding: 5px;
+  padding: 7px 5px;
   font-weight: bold;
   border-radius: 5px;
+  border: 1px solid #2e4790;
+  color: #2e4790;
+}
+nav ul li button:hover {
+  background-color: #2e4790;
+  border: 1px solid #ffe7d2;
+  color: #ffe7d2;
 }
 nav ul li button .logo-header {
   width: 20px;
+}
+
+.jumbotron {
+  margin-top: 50px;
+  padding: 30px 0;
+}
+.jumbotron::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.jumbotron .lefter {
+  color: #584245;
+  float: left;
+  width: 50%;
+}
+.jumbotron .lefter h1 {
+  font-size: 55px;
+}
+.jumbotron .lefter h5 {
+  font-size: 26px;
+  padding: 10px 0;
+  margin-bottom: 50px;
+}
+.jumbotron .lefter .button-area {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.jumbotron .lefter .button-area button {
+  display: flex;
+  align-items: center;
+  padding: 7px 5px;
+  font-weight: bold;
+  border-radius: 5px;
+  background-color: #2e4790;
+  color: white;
+  border: 1px solid white;
+}
+.jumbotron .lefter .button-area button:hover {
+  background-color: white;
+  color: #2e4790;
+  border: 1px solid #2e4790;
+}
+.jumbotron .lefter .button-area button .logo-header {
+  width: 20px;
+}
+.jumbotron .lefter .button-area span {
+  margin: 0 5px;
+}
+.jumbotron .lefter a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #584245;
+}
+.jumbotron .righter {
+  float: left;
+  width: 50%;
+}
+
+.seppia-sec {
+  background-color: #ffe7d2;
+  height: 300px;
 }

@@ -1,0 +1,14 @@
+@mixin button_layout{
+    display: flex;
+    align-items: center;
+    padding:7px 5px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+// Clearfix 
+@mixin clearfix{
+    content:"";
+    display: table;
+    clear: both;
+}

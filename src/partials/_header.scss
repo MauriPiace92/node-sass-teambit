@@ -6,7 +6,7 @@ nav{
     border-bottom: 1px solid $secondary_color;
 
     .logo{
-        width: 12%;
+        width: 9%;
     }
 
     ul{
@@ -20,15 +20,24 @@ nav{
                 text-decoration: none;
                 color:$secondary_color;
                 font-size: $little_font_size;
+                font-weight:bold ;
+
+                &:hover{
+                    color: $primary_color;
+                }
             }
+
             button{
-                display: flex;
-                align-items: center;
+                
+                @include button_layout;
                 border: 1px solid $colo_for_button;
                 color:$colo_for_button;
-                padding: 5px;
-                font-weight: bold;
-                border-radius: 5px;
+
+                &:hover{
+                    background-color: $colo_for_button;
+                    border: 1px solid $primary_color;
+                    color :$primary_color;
+                }
 
                 .logo-header{
                     width: 20px;
@@ -38,3 +47,71 @@ nav{
         }
     }
 }
+
+// header jumbotron:
+.jumbotron{
+    margin-top: 50px;
+    padding: 30px 0;
+
+    &::after{
+        @include clearfix;
+    }
+
+    .lefter{
+        color: $secondary_color;
+        float: left;
+        width: 50%;
+        
+        h1{
+            font-size: 55px;
+        }
+
+        h5{
+            font-size: 26px;
+            padding: 10px 0;
+            margin-bottom: 50px;
+        }
+
+        .button-area{
+            display:flex;
+            align-items: center;
+            margin-bottom: 20px;
+        
+            button{
+                @include button_layout;
+                background-color: $colo_for_button;
+                color:white;
+                border: 1px solid white;
+                
+                &:hover{
+                    background-color: white;
+                    color: $colo_for_button;
+                    border:1px solid $colo_for_button;
+                }
+                
+
+                .logo-header{
+                    width: 20px;
+                }
+            }
+            span{
+                margin:0 5px;
+            }
+        }
+
+        a{
+            text-decoration:none;
+            font-weight: bold;
+            color:$secondary_color;
+
+        }
+
+    }
+    
+    .righter{
+        float: left;
+        width: 50%;
+    }
+
+}
+
